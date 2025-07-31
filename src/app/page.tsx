@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <main className='w-full h-full p-4 flex flex-col justify-center items-center'>
-      <div className='bg-[#323a49] relative flex flex-col text-center p-6 pb-16 rounded-2xl gap-4 items-center md:w-1/2 xl:w-1/3 xl:h-1/3 xl:justify-around '>
+      <div className='bg-[#323a49] relative flex flex-col text-center p-6 pb-16 rounded-2xl gap-4 items-center md:w-1/2 xl:min-w-1/3 xl:min-h-1/3 xl:justify-around '>
         <p className='text-[#52ffa8] text-sm font-medium tracking-[0.2em]'>
           {data ? `ADVICE #${data.id}` : 'ADVICE'}
         </p>
