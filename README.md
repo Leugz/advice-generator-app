@@ -1,6 +1,9 @@
 # Frontend Mentor - Advice generator app solution
 
-This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the
+[Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db).
+Frontend Mentor challenges help you improve your coding skills by building
+realistic projects.
 
 ## Table of contents
 
@@ -28,14 +31,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-<!-- Add a screenshot of your solution. Update the file path in the image above. -->
+![desktop design](./public/screenshots/desktop-design.png)
+![active states](./public/screenshots/active-states.png)
+![mobile design](./public/screenshots/mobile-design.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com) <!-- Update with your solution URL -->
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) <!-- Update with your live site URL -->
+- Solution URL: 
+- Live Site URL: https://advice-generator-app-leugz.vercel.app/
 
 ## My process
 
@@ -57,21 +60,21 @@ Users should be able to:
 - Gained a better understanding of component composition in React.
 
 ```javascript
-  useEffect(() => {
-    fetchData()
-  }, [])
+useEffect(() => {
+  fetchData()
+}, [])
 
-  const fetchData = async () => {
-    try {
-      const response = await api.get('/advice')
+const fetchData = async () => {
+  try {
+    const response = await api.get('/advice')
 
-      if (!response) return
+    if (!response) return
 
-      setData(response.data.slip)
-    } catch (error) {
-      console.error(error)
-    }
+    setData(response.data.slip)
+  } catch (error) {
+    console.error(error)
   }
+}
 ```
 
 ### Continued development
@@ -83,15 +86,19 @@ Users should be able to:
 
 ### Useful resources
 
-- [Frontend Mentor's article on submitting solutions](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) - This guide helped me understand the submission process on Frontend Mentor.
-- [Tailwind CSS documentation](https://tailwindcss.com/docs) - The official Tailwind CSS documentation was invaluable for learning how to use the framework.
+- [Frontend Mentor's article on submitting solutions](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) -
+  This guide helped me understand the submission process on Frontend Mentor.
+- [Tailwind CSS documentation](https://tailwindcss.com/docs) - The official
+  Tailwind CSS documentation was invaluable for learning how to use the
+  framework.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com) <!-- Update with your website -->
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername) <!-- Update with your Frontend Mentor username -->
-- Twitter - [@yourusername](https://www.twitter.com/yourusername) <!-- Update with your Twitter username -->
+- Frontend Mentor -
+  [@Leugz](https://www.frontendmentor.io/profile/Leugz)
 
 ## Acknowledgments
 
-I'd like to thank the Frontend Mentor community for providing the challenge and a platform to learn and grow. A special thanks to those who offered feedback and support throughout the process.
+I'd like to thank the Frontend Mentor community for providing the challenge and
+a platform to learn and grow. A special thanks to those who offered feedback and
+support throughout the process.
