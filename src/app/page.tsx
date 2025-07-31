@@ -34,9 +34,11 @@ export default function Home() {
         <p className='text-[#52ffa8] text-sm font-medium tracking-[0.2em]'>
           {data ? `ADVICE #${data.id}` : 'ADVICE'}
         </p>
-        <h1 className='font-semibold text-[28px] font-mono'>
-          {data ? `"${data.advice}"` : ''}
-        </h1>
+        {data && (
+          <h1 className='font-semibold text-[28px] font-mono'>
+            {`"${data.advice}"`}
+          </h1>
+        )}
         <Image
           src='/pattern-divider-mobile.svg'
           width={0}
